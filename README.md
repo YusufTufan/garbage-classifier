@@ -5,15 +5,38 @@ This project is an AI-powered waste classification system using **YOLOv3** and *
 
 ## 🚀 Features
 
-- Real-time waste detection via webcam or image input
-- Classifies types of trash (plastic, glass, metal, paper, etc.)
-- Built using Python and YOLOv3-tiny for faster performance
+* 🎥 **Real-Time Detection:** Instantly detects waste materials using a webcam feed.
+* 🗑️ **Multi-Class Classification:** Identifies various types of trash:
+  * Plastic
+  * Glass
+  * Metal
+  * Paper
+* ⚡ **Performance:** Optimized with **YOLOv3-tiny** for faster processing on standard hardware.
 
 ## 📦 Installation
 
+1. **Clone the repository**
+```bash
+git clone [https://github.com/YusufTufan/trash-detector-yolo.git](https://github.com/YusufTufan/trash-detector-yolo.git)
+cd trash-detector-yolo
+```
+2. **Install dependencies**
 ```bash
 pip install -r requirements.txt
+```
+
+3. Download Weights
+```bash
+Download the yolov3-tiny.weights file (not included due to size) and place it in the root directory.
+
+Ensure coco.names (or your custom classes file) is present.
+```
+▶️ Usage
+Run the main script to start the detection:
+```bash
 python real_time_yolo.py
+
+Press q to quit the application.
 ```
 
 Make sure to download the weights file for YOLO and place it in the root directory.
@@ -21,30 +44,14 @@ Make sure to download the weights file for YOLO and place it in the root directo
 ## 📌 Notes
 
 - Ensure your webcam is connected
-- Uses coco.names classes (you can modify for custom classes)
+- Lighting conditions may affect detection accuracy.
+- The model uses pre-trained weights which can be fine-tuned for better specific waste detection.
 
 ---
 
-# 🧠 Çöp Tanıma (YOLO Tabanlı Atık Sınıflandırma)
+📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-Bu proje, **YOLOv3** ve **OpenCV** kullanarak geliştirilen yapay zekâ destekli bir atık sınıflandırma sistemidir. Gerçek zamanlı olarak çöp türlerini (plastik, cam, metal, kağıt vb.) tanıyabilir.
+Copyright (c) 2023 YusufTufan
 
-## 🚀 Özellikler
 
-- Webcam veya görsel üzerinden anlık atık algılama
-- Atıkları türlerine göre sınıflandırma
-- Hızlı çalışması için YOLOv3-tiny kullanımı
-
-## 📦 Kurulum
-
-```bash
-pip install -r requirements.txt
-python real_time_yolo.py
-```
-
-YOLO ağırlık (weights) dosyasını indirip proje dizinine yerleştirmeyi unutmayın.
-
----
-
-### 👨‍💻 Developer
-**Yusuf Tufan**  
